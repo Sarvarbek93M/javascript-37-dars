@@ -1,6 +1,5 @@
 "use strict";
 
-const startDate = new Date();
 // console.log(date);
 // //------------ get orqali malumotlarni olinadi
 // console.log(date.getHours());
@@ -12,9 +11,14 @@ const startDate = new Date();
 //---------------- set orqali malumot kiritamiza
 // console.log(date.setHours(11));
 // console.log(date);
+const startDate = new Date();
+console.log(startDate.getTime());
+
 for (let i = 0; i > 100000; i++) {
   let a = 1 ** 3;
 }
 
 const endDate = new Date();
-alert(tsikl ${endDate-startDate} millisekund ishladi);
+console.log(endDate.getTime());
+
+alert(`tsikl ${endDate - startDate} millisekund ishladi`);
